@@ -7,6 +7,7 @@ dotenv.config();
 const app = express();
 
 app.set('port', process.env.PORT || 4000);
+app.use(express.json());
 
 app.use(
   cors({
@@ -29,3 +30,19 @@ mongoose
   .catch((error) => {
     console.log('an error occurred while connecting ot the db', error);
   });
+
+//? Import routes here
+const songListRoute = require('./routes/songListRoute');
+
+//? Routes
+app.get('/', (req, res) => res.send('Welcome to my karaoke song picker!'));
+app.use('/api/songList', songListRoute);
+
+app.all('*', (req, res) => {
+  res.status(500);
+  res.send('Invalid path');
+});
+
+app.listen(app.get('port'), () => {
+  console.log('Server started on port ' + app.get('port'));
+});
