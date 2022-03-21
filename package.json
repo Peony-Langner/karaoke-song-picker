@@ -1,0 +1,23 @@
+{
+  "name": "karaoke-song-picker",
+  "version": "1.0.0",
+  "description": "An app to pick a random song for karaoke",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Peony-Langner/karaoke-song-picker.git"
+  },
+  "keywords": [
+    "karaoke",
+    "songs"
+  ],
+  "author": "Peony Langner",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Peony-Langner/karaoke-song-picker/issues"
+  },
+  "homepage": "https://github.com/Peony-Langner/karaoke-song-picker#readme"
+}
