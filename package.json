@@ -4,7 +4,7 @@
   "description": "An app to pick a random song for karaoke",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "nodemon server && cd client/ && npm start"
   },
   "repository": {
     "type": "git",
